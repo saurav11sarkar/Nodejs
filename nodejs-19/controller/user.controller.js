@@ -35,7 +35,7 @@ exports.deleteUser = (req, res) => {
     const index = users.findIndex(user => user.id === id);
 
     if (index !== -1) {
-        users.splice(index, 1); // Remove user from array
+        users.splice(index, 1);
         res.status(200).json(users);
     } else {
         res.status(404).json({ message: 'User not found' });

@@ -1,10 +1,12 @@
 const express = require('express');
 const userRouter = require('./router/user.route');
+const productRouter = require('./router/product.route');
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(userRouter)
+app.use(userRouter);
+app.use(productRouter);
 
 // 404 Middleware
 app.use((req, res) => {

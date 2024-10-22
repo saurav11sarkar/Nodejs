@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const USER = require('./models/user.model');
 const router = require('./router/user.router');
 require('./models/db.model')
 

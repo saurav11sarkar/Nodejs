@@ -1,0 +1,14 @@
+<%-include("layout/header.ejs")%>
+    <main>
+        <div class="container">
+            <form action="/register" method="POST">
+                <h2>Register</h2>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </main>
+<%-include("layout/footer.ejs")%>
